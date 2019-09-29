@@ -1,0 +1,61 @@
+body { 
+  padding: 0;
+  margin: 0 auto;
+  min-width: 375px;
+  max-width: 1280px;
+}
+
+@keyframes MakeItRainbow {
+  0% { background-position: 0 0 }
+  50% { background-position: -100% 0 }
+  to { background-position: -200% 0 }
+}
+
+@media (min-width: 780px) {
+  .wrapper { width: 60%; }
+}
+@media (max-width: 780px) {
+  .wrapper { width: 88%; }
+}
+.wrapper {
+  position: relative;
+  margin: 80px auto;
+}
+
+/*  */
+.anim-rainbow {
+  background: linear-gradient(270deg, #6f42c1 7.1%, #0366d6 28.4%, #28a745 42.6%, #ffd33d 56.8%, #f66a0a 71%, #d73a49 92.9%, #6f42c1);
+  background-size: 200% 100%;
+  animation: MakeItRainbow 4s linear infinite;
+}
+
+.position-absolute {
+  position: absolute;
+  border-radius: 4px;
+  height: 40px;
+  width: 80%;
+  top: -65px;
+  left: 10%;
+}
+
+/*  */
+.section {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 10px auto;
+  line-height: 40px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+.section > a {
+  text-decoration: none;
+}
+.section:hover {
+  box-shadow:  2px 2px 2px 0px rgba(8,8,8,.2);
+} .s1 { background-color: rgba(255, 231, 173, .4) }
+.s2 {
+  background-color: rgba(66, 184, 131, .4);
+}
+.stay_tuned {
+  background-color: #d2d0fe;
+}
